@@ -1,0 +1,1 @@
+# auramind.ru
