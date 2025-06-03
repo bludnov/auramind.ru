@@ -28,29 +28,29 @@ function App() {
   return (
     <>
     <Header openDownloadModal={openDownloadModal} />
-    <div className='custom-anim-1 w-full h-full'>
-      <div className='relative flex flex-col justify-center items-center w-full sm:h-[700px] h-[300px] border-b-[1px] border-white/20'>
-        <div className='absolute top-0 left-0 w-full h-full'>
-          <Waves
-            lineColor="#474747"
-            backgroundColor="#030303"
-            friction={0.9}
-            tension={0.005}
-          />
+      <div className='custom-anim-1 w-full h-full'>
+        <div className='relative flex flex-col justify-center items-center w-full sm:h-[700px] h-[300px] border-b-[1px] border-white/20'>
+          <div className='absolute top-0 left-0 w-full h-full'>
+            <Waves
+              lineColor="#474747"
+              backgroundColor="#030303"
+              friction={0.9}
+              tension={0.005}
+            />
+          </div>
+          <div className='flex flex-col justify-center items-center relative z-[4] drop-shadow-[0_0_100px_#FFFFFF] text-center'>
+            <BlurText
+              text="AuraMind"
+              delay={150}
+              animateBy="words"
+              direction="top"
+              onAnimationComplete={handleAnimationComplete}
+              className="relative text-center z-[4] font-unbounded sm:text-[80px] text-[30px] font-[600] drop-shadow-[0_0_20px_#FFFFFF]"
+            />
+            <p className='font-neue sm:text-[35px] text-[20px] font-[400] custom-list-2 anim-delay-550ms drop-shadow-[0_0_20px_#FFFFFF]'>Ваш личный нейро-психолог</p>
+          </div>
+          
         </div>
-        <div className='flex flex-col justify-center items-center relative z-[4] drop-shadow-[0_0_100px_#FFFFFF] text-center'>
-          <BlurText
-            text="AuraMind"
-            delay={150}
-            animateBy="words"
-            direction="top"
-            onAnimationComplete={handleAnimationComplete}
-            className="relative text-center z-[4] font-unbounded sm:text-[80px] text-[30px] font-[600] drop-shadow-[0_0_20px_#FFFFFF]"
-          />
-          <p className='font-neue sm:text-[35px] text-[20px] font-[400] custom-list-2 anim-delay-550ms drop-shadow-[0_0_20px_#FFFFFF]'>Ваш личный нейро-психолог</p>
-        </div>
-        
-      </div>
 
       <div id='prems' className='flex flex-col justify-center items-center mt-10 gap-[40px]'>
         <ShinyText text="Наши преимущества" disabled={false} speed={2} className='sm:text-[30px] text-[20px] font-unbounded' />
@@ -103,7 +103,7 @@ function App() {
       </p>
 
       <div className='flex justify-start items-center gap-x-3'>
-        <a href='./files/AweProject.exe'>
+        <a href='./files/AuraMind.exe'>
           <button
             class="group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-[#4f4f4f] backdrop-blur-lg px-6 py-2 text-base font-light text-white transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-gray-600/50 border border-white/20"
           >
@@ -116,7 +116,7 @@ function App() {
           </button>
         </a>
 
-        <a href='./files/aweproject.zip'>
+        <a href='./files/AuraMind.zip'>
           <button
             class="group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-[#4f4f4f] backdrop-blur-lg px-6 py-2 text-base font-light text-white transition-all duration-300 ease-in-out hover:scale-110 hover:shadow-xl hover:shadow-gray-600/50 border border-white/20"
           >

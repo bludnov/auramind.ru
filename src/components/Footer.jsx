@@ -11,8 +11,7 @@ const Footer = () => {
                 </h1>
             </div>
 
-            <p className='font-[300]'>2025 © Все права защищены.</p>
-            <p className='font-[300]'>Сайт написал <a className='title-animated-gradient' href="https://t.me/sterfordovsky">sterford</a></p>
+            <p className='font-[300]'>Сайт разработан в рамках конкурса <a className='title-animated-gradient' href="https://altairdonso.ru/2025/04/02/iv-regionalnyj-investiczionnyj-konkurs-tehnostartap-2025/">Техностартап-2025</a> командой "Восход"</p>
         </div>
 
     );
